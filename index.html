@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliders</title>
+    <!-- Lien vers Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="toolbar">
+        <a id="toolbar-toggle" href="#"><i class="fas fa-arrow-right"></i> Barre d'outils</a>
+        <ul class="hide">
+            <li><button id="slider-previous" title="Image précédente"><i class="fas fa-backward"></i></button></li>
+            <li><button id="slider-toggle" title="Démarrer le carrousel"><i class="fas fa-play"></i></button></li>
+            <li><button id="slider-next" title="Image suivante"><i class="fas fa-forward"></i></button></li>
+            <li><button id="slider-random" title="Sélectionner une image aléatoire"><i class="fas fa-random"></i></button></li>
+        </ul>
+    </nav>
+    <div class="container">   
+        <div id="slider">
+            <figure>
+                <img src="images/img1.jpg" alt="Slide image">
+                <figcaption></figcaption>
+            </figure>
+        </div>
+        <div class="thumbnails" id="thumbnails">
+            <button class="button" id="thumbnails-previous"> << Page précédent  </button>
+            <div class="thumbnail-container">
+            <img src="images/img1.jpg" alt="image1" class="thumbnail">
+            <img src="images/img2.jpg" alt="image2" class="thumbnail">
+            <img src="images/img3.jpg" alt="image3" class="thumbnail">
+            <img src="images/img4.jpg" alt="image4" class="thumbnail">
+            <img src="images/img5.jpg" alt="image5" class="thumbnail">
+            <img src="images/img6.jpg" alt="image6" class="thumbnail">
+            <img src="images/img7.jpg" alt="image7" class="thumbnail">
+            <img src="images/img8.jpg" alt="image8" class="thumbnail">
+            <img src="images/img9.jpg" alt="image9" class="thumbnail">
+            <img src="images/img10.jpg" alt="image10" class="thumbnail">
+            </div>
+            <button class="button" id="thumbnails-next">  Page suivante >> </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

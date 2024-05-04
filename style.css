@@ -1,0 +1,134 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    margin: 0 auto;
+    width: 80%;
+    background: url('images/bg.jpg');
+    font-family: 'Open Sans';
+}
+
+a{
+   
+    color: #3858e9;
+    text-decoration: none;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 30px 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: 1px solid #000;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 5px 5px;
+  }
+  
+.thumbnails.hide {
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+
+.toolbar ul{
+    padding-top: 2%;
+    text-align: center;
+}
+.toolbar ul li{
+    display: inline-block;
+}
+.toolbar ul li + li{
+    margin-left: 1em;
+}
+
+/* //Animation pour l'ancienne image qui disparaît  */
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+/* Animation pour la nouvelle image qui apparaît  */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+#slider img.fadeOut {
+    animation-name: fadeOut;
+}
+
+#slider img.fadeIn {
+    animation-name: fadeIn;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 550px;
+    padding-top: 3%;
+
+}
+
+#slider{
+    text-align: center;
+    transform: rotate(-4deg);
+    width: 50%;
+    top: 40%;
+    left: 50%;
+    border: 12px solid #ffffff;
+    border-radius: 5px;
+    box-shadow: 10px 25px 30px rgba(0, 0, 0, 0.3);
+    font-family: 'Open Sans';
+    animation-duration: 0.6s;
+}
+#slider img {
+    
+    animation-duration: 0.6s; 
+}
+
+.thumbnails {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 6%;
+}
+.thumbnail-container{
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 900px;
+    padding: 4px;
+}
+
+.thumbnails img {
+   padding-left: 1%;
+    height: 100px;
+    cursor: pointer;
+}
+
+#slider img.fadeOut {
+    animation-name: fadeOut;
+}
+
+#slider img.fadeIn {
+    animation-name: fadeIn;
+}
+
+
